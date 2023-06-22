@@ -1,0 +1,11 @@
+# Directorios
+venv/
+__pycache__/
+controllers/__pycache__/
+clases/__pycache__/
+models/__pycache__/
+routes/__pycache__/
+utils/__pycache__/
+controllers/clases/__pycache__/
+.idea/
+.env
