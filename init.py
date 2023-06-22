@@ -1,11 +1,6 @@
 
 import os
-import random
 import cv2
-
-from models.item import Item
-from utils.db import db
-
 
 names_files_complete_ext = []
 names_files = []

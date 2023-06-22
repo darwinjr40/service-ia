@@ -66,7 +66,7 @@ def compare_imgs1(img1, img2):
     return diferencia
 
 def es_similar(img1, img2):
-    return compare_imgs1(img1, img2) >= 0.90
+    return compare_imgs1(img1, img2) >= 0.99
 
 def buscar_similares(img1):
     dim = len(coded_files)    
