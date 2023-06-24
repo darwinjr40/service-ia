@@ -3,7 +3,7 @@
 import base64
 import cv2
 import numpy as np
-from init import names_files_complete_ext, names_files, coded_files
+from construct import names_files_complete_ext, names_files, coded_files
 
 
 def es_similar(fra, frb):

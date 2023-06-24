@@ -7,7 +7,7 @@ import numpy as np
 from models.item import Item
 from utils.db import db
 from sqlalchemy.orm import class_mapper
-from init import names_files_complete_ext, names_files
+from construct import names_files_complete_ext, names_files
 import clases.metodos as met
 
 route_items = Blueprint('route_items', __name__, url_prefix='/api')

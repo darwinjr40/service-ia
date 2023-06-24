@@ -1,5 +1,5 @@
 
-import init
+import construct
 
 from flask import Flask
 from routes.routes import rutas
