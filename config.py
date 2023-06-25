@@ -10,6 +10,7 @@ class ENV:
     DB_DATABASE = os.getenv('DB_DATABASE', 'api_flask' )
     DB_USERNAME = os.getenv('DB_USERNAME', 'root' )
     DB_PASSWORD = os.getenv('DB_PASSWORD', '' )
+    APP_URL = os.getenv('APP_URL', 'http://127.0.0.1:5000' )
     
 class DevelopmentConfig():
     MYSQL_HOST = 'localhost'

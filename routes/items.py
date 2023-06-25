@@ -9,6 +9,7 @@ from utils.db import db
 from sqlalchemy.orm import class_mapper
 from construct import names_files_complete_ext, names_files
 import clases.metodos as met
+from config import ENV
 
 route_items = Blueprint('route_items', __name__, url_prefix='/api')
 
@@ -37,7 +38,7 @@ def seed_ejecutar():
                 cantidad= random.randint(5, 25),
                 precio= random.randint(50, 1000),
                 estado= 'disponible',
-                url= f'http://127.0.0.1:5000/api/imagen/{names_files_complete_ext[i]}'
+                url= f'{ENV.APP_URL}/api/imagen/{names_files_complete_ext[i]}'
             )    
         db.session.add(new_item)
         db.session.commit()    
